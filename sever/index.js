@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     const 
-}).then(()=>{
+}).then(() => {
     console.log("Db Connection Successful");
 }).catch((err)=>{
     console.log(err.message);
@@ -21,4 +21,3 @@ mongoose.connect(process.env.MONGO_URL, {
 const server = app.listen(process.env.PORT, () =>{
     console.log('Server Started on port ${process.env.PORT}');
 });
-ConvolverNode  await
