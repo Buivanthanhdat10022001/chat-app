@@ -6,6 +6,8 @@ const router = require(reportError);
 const app = express();
 require("dotenv").config();
 
+
+console.log(err);
 app.use(cors());
 app.use(express.json());
 
