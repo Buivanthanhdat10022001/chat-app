@@ -35,12 +35,21 @@ function Register() {
         }else if(username.length<3){
             toast.error (
                 'Username should be greater than 3 characters', toastOptions
+                
             );
+            return false;
         }else if(password.length<8){
             toast.error (
                 'password should be greater than 8 characters', toastOptions
             );
+            return false;
+
+        }else if(email==="") {
+            toast.error("email is required", toastOptions);
+            return false;
+            
         }
+        return true;
     }
 
     const handleChange = (event) => {
